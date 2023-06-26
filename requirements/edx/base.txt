@@ -764,7 +764,8 @@ openedx-events==0.13.0
     #   -c requirements/edx/../constraints.txt
     #   -r requirements/edx/base.in
     #   edx-event-bus-kafka
-openedx-filters==0.8.0
+    #   edx-event-bus-redis
+openedx-filters @ git+https://github.com/openedx/openedx-filters.git@MJG/instructor-tab-filters
     # via
     #   -r requirements/edx/base.in
     #   lti-consumer-xblock
