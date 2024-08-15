@@ -162,8 +162,10 @@ class RoleCacheTestCase(TestCase):  # lint-amnesty, pylint: disable=missing-clas
 
     ROLES = (
         (CourseStaffRole(IN_KEY), ('staff', IN_KEY, 'edX')),
+        (CourseStaffRole(IN_KEY), ('staff', IN_KEY, 'EDX')),
         (CourseInstructorRole(IN_KEY), ('instructor', IN_KEY, 'edX')),
         (OrgStaffRole(IN_KEY.org), ('staff', None, 'edX')),
+        (OrgStaffRole(IN_KEY.org), ('staff', None, 'EDX')),
         (OrgInstructorRole(IN_KEY.org), ('instructor', None, 'edX')),
         (CourseBetaTesterRole(IN_KEY), ('beta_testers', IN_KEY, 'edX')),
     )

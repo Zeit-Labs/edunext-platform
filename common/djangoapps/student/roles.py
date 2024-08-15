@@ -90,7 +90,7 @@ class RoleCache:
         return any(
             access_role.role in self.get_roles(role) and
             access_role.course_id == course_id and
-            access_role.org == org
+            access_role.org.lower() == org.lower()
             for access_role in self._roles
         )
 
